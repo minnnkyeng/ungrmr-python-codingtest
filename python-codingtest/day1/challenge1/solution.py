@@ -1,14 +1,9 @@
 # 7의 개수
 
 def solution(array):
-    result = 0
-    str_array = []
+    result = ''
 
     for num in array:
-        str_array += str(num)
+        result += str(num)
 
-    for num in str_array:
-        if int(num) == 7:
-            result += 1
-
-    return result
+    return result.count('7')
